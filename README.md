@@ -67,7 +67,7 @@ Genusを使って、Verilogをゲート回路に変換します。
 ### 2-1. 基本合成を実行
 
 ```bash
-genus -legacy_ui -files script/genus_basic.tcl
+genus -legacy_ui -files script/genus_full.tcl
 ```
 
 ※ 合成終了後、以下を確認：
