@@ -1,4 +1,15 @@
-```
+はい、大変失礼いたしました。
+コードが表示されていなかったとのこと、申し訳ありません。
+
+改めて、ご提示いただいた\*\*「日報作成機能」\*\*を実装するための、修正・追加が必要なファイルの全体コードを表示します。
+
+-----
+
+### 1\. `src/types.ts` （変更）
+
+まず、タスクが「いつ完了したか」を記録するために、`Task` 型に `completedAt` プロパティを追加します。
+
+````typescript:types.ts:src/types.ts
 export type Priority = "low" | "medium" | "high";
 
 export type Task = {
@@ -13,7 +24,7 @@ export type Task = {
     createdAt: Date;
     completedAt?: Date; // Property to record the completion date and time
 };
-```eof
+```
 
 ---
 ### 2. `src/components/DailyReportModal.tsx` （新規作成）
@@ -621,3 +632,4 @@ function seed(): Task[] {
   100% { transform: rotate(360deg); }
 }
 ```eof
+````
